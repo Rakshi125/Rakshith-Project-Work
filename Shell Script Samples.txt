@@ -1,0 +1,23 @@
+# Version: v1
+
+
+# Get the aws resource tracker shell script sample
+
+
+
+# Go to aws cli refernce website for more info about cmd
+
+# List S3 buckets info
+aws s3 ls
+
+
+# List Ec2 instance
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+
+
+# List Lambda function details
+aws lambda list-functions
+
+
+# IAM users info
+aws iam list-users
